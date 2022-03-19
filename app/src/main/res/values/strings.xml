@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GraphCalc</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="times">*</string>
+    <string name="divide">/</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="inv">Inv</string>
+    <string name="hyp">Hyp</string>
+    <string name="sqrt">√</string>
+    <string name="pow">^</string>
+    <string name="log">log</string>
+    <string name="erf">erf</string>
+    <string name="eulero">e</string>
+    <string name="ln">ln</string>
+    <string name="pi">π</string>
+    <string name="ans">ans</string>
+    <string name="abss">abs</string>
+    <string name="rad">RAD</string>
+
+</resources>

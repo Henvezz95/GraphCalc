@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme2"
+    android:id="@+id/graph_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.henvezz.calcolatrice.GraphMain">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryRedDark"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="52dp"
+        android:id="@+id/toolbar2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar2"
+        android:id="@+id/text_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="y="
+            android:textSize="44sp"
+            android:id="@+id/textview"
+            android:backgroundTint="@color/colorPrimaryRed"
+            android:layout_height="170dp"
+            android:layout_below="@+id/toolbar2"
+            android:layout_gravity="left"
+            android:cursorVisible="true"
+            android:fadeScrollbars="false"
+            android:scrollIndicators="right"
+            android:scrollbars="vertical"
+            android:verticalScrollbarPosition="defaultPosition" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/numbers"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="("
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    android:onClick="immissioneParentesiAperta_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="1"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="4"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="7"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="."
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:text=")"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    android:onClick="immissioneParentesiChiusa_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="2"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="5"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="8"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="0"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    android:text="x"
+                    android:onClick="immissioneXOCostante_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="3"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="6"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="9"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRed"
+                    android:background="@color/colorPrimaryRed"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:onClick="immissioneNumeroTastiera_G"
+                    android:layout_height="200dp" />
+
+                <ImageButton
+                    android:text="="
+                    android:textSize="40sp"
+
+                    android:background="@drawable/unnamed3"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:onClick="drawGraph"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:text="Ce"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRedDark"
+                    android:background="@color/colorPrimaryRedDark"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    android:onClick="cancella_G"
+                    android:id="@+id/canc"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="@string/pow"
+                    android:textSize="24sp"
+                    android:backgroundTint="@color/colorPrimaryRedDark"
+                    android:background="@color/colorPrimaryRedDark"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:onClick="immissioneOperandoDaTastiera_G"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="@string/plus"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRedDark"
+                    android:background="@color/colorPrimaryRedDark"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="0dp"
+                    android:onClick="immissioneOperandoDaTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="@string/minus"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRedDark"
+                    android:background="@color/colorPrimaryRedDark"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="immissioneOperandoDaTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="@string/divide"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRedDark"
+                    android:background="@color/colorPrimaryRedDark"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:onClick="immissioneOperandoDaTastiera_G"
+                    android:layout_height="200dp" />
+
+                <Button
+                    android:text="@string/times"
+                    android:textSize="40sp"
+                    android:backgroundTint="@color/colorPrimaryRedDark"
+                    android:background="@color/colorPrimaryRedDark"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:onClick="immissioneOperandoDaTastiera_G"
+                    android:layout_height="200dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Grafico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignBottom="@+id/button10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="6dp" />
+
+    <ImageButton
+
+        android:id="@+id/button10"
+        android:layout_above="@+id/text_layout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/pr_source"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="startCalculator" />
+
+</RelativeLayout>

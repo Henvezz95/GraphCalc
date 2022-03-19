@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.example.henvezz.calcolatrice.GraphVisual">
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/graph"
+      />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:background="@color/colorPrimary">
+
+        <EditText
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:inputType="numberSigned|numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:text="to"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <EditText
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:inputType="numberSigned|numberDecimal"
+            android:ems="10"
+            android:id="@+id/editText_2"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:text="Set"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:onClick="setGraphBounds" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
