@@ -10,6 +10,9 @@ Simple Graphing calculator app for Android. It was made as an university project
 The file **GraphCalc.apk** is the compiled app and works with every android device with Android 4.1 or higher.
 In portrait mode, the calculator has basic functions such as addition, subtraction, multiplication, etc.
 
+
+The Java code and the XML layout can be found in the folder [app/src/main/](https://github.com/Henvezz95/GraphCalc/tree/master/app/src/main).
+
 ![Portrait Example](https://github.com/Henvezz95/GraphCalc/blob/master/Images/Gif1.gif)
 
 In landscape mode, more advanced functions are available, like trigonometric functions, factorial (gamma function), and erf function (error function).
